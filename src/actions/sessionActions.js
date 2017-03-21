@@ -9,8 +9,8 @@ export const login = (user, history) => {
         sessionService.saveUser(response.data)
         .then(() => {
           history.push('/');
-        });
-      });
+        }).catch(err => console.error(err));
+      }).catch(err => console.error(err));
     });
   };
 };
