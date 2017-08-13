@@ -2531,6 +2531,10 @@ immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
 
+immutable@^3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -2789,6 +2793,10 @@ js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
+js-cookie@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.1.4.tgz#da4ec503866f149d164cf25f579ef31015025d8d"
+
 js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
@@ -2931,7 +2939,7 @@ loader-utils@0.2.x, loader-utils@^0.2.15, loader-utils@^0.2.16, loader-utils@^0.
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-"localforage@^1.4.0 || ^1.5.0":
+localforage@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.5.0.tgz#6b994e19b56611fa85df3992df397ac4ab66e815"
   dependencies:
@@ -4115,11 +4123,13 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-react-session@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/redux-react-session/-/redux-react-session-1.1.0.tgz#0267aae455c3a7c0524a01677f66435780c9e2c7"
+redux-react-session@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/redux-react-session/-/redux-react-session-2.1.0.tgz#e35c5afeb9faa57150d5d0ba7e18eadd8f88e2d3"
   dependencies:
-    localforage "^1.4.0 || ^1.5.0"
+    immutable "^3.8.1"
+    js-cookie "2.1.4"
+    localforage "1.5.0"
 
 redux-thunk@2.2.0:
   version "2.2.0"
